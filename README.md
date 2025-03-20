@@ -26,7 +26,7 @@ An Android productivity app that combines task management, reminders, and timer 
 
 1. Clone this repository
    ```
-   git clone https://github.com/yourusername/TaskTimerReminder.git
+   git clone https://github.com/dasundu/TaskManagement-App.git
    ```
 2. Open the project in Android Studio
 3. Build and run on your device or emulator
@@ -56,6 +56,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername) - email@example.com
 
-Project Link: [https://github.com/yourusername/TaskTimerReminder](https://github.com/yourusername/TaskTimerReminder)
+
+Project Link: [https://github.com/dasundu/TaskManagement-App](https://github.com/dasundu/TaskManagement-App)
