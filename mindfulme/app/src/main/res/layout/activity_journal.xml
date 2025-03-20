@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Left Home Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/homeIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home Icon"
+                android:layout_marginEnd="16dp"/>
+        </LinearLayout>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Journal"
+            android:textSize="24sp"
+            android:textColor="@color/primaryColor"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Large Journal Entry Input -->
+        <EditText
+            android:id="@+id/journalEntryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:hint="Write your thoughts here..."
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:backgroundTint="@color/primaryColor"
+            android:padding="16dp"
+            android:textColor="@color/primaryColor"
+            android:textColorHint="@color/primaryColor"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveJournalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Entry"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primaryColor"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Recent Entries Section -->
+        <TextView
+            android:id="@+id/recentEntriesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Entries"
+            android:textSize="18sp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/recentEntriesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Placeholder for recent journal entries -->
+            <TextView
+                android:id="@+id/recentEntry1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entry 1: Today was a great day! I felt really productive and happy."
+                android:textSize="16sp"
+                android:textColor="@color/primaryColor"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/recentEntry2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entry 2: I had a relaxing evening with some good music and a book."
+                android:textSize="16sp"
+                android:textColor="@color/primaryColor"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/recentEntry3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entry 3: Feeling a bit stressed about work, but managing to stay calm."
+                android:textSize="16sp"
+                android:textColor="@color/primaryColor"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/recentEntry4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entry 4: Went for a walk today, it really helped clear my mind."
+                android:textSize="16sp"
+                android:textColor="@color/primaryColor"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/recentEntry5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entry 5: Trying out new meditation techniques, feeling more centered."
+                android:textSize="16sp"
+                android:textColor="@color/primaryColor"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

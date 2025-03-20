@@ -1,0 +1,28 @@
+
+    <resources>
+        <string name="app_name">Mindful Me</string>
+        <string name="mood_tracker">Mood Tracker</string>
+        <string name="journal">Journal</string>
+        <string name="daily_goals">Daily Goals</string>
+        <string name="onboarding_text_1">Welcome to MindfulMe! Track your mood and stay mindful.</string>
+        <string name="onboarding_text_2">Journal your thoughts to maintain a positive outlook.</string>
+        <string name="onboarding_text_3">Set daily goals and achieve more with MindfulMe!</string>
+        <string name="user_profile">User Profile</string>
+        <string name="happy_5_days">Happy: 5 days</string>
+        <string name="home_icon">Home Icon</string>
+        <string name="john_doe">John Doe</string>
+        <string name="johndoe_gmail_com">johndoe@gmail.com</string>
+        <string name="phone_icon">Phone Icon</string>
+        <string name="user_profile_picture">User Profile Picture</string>
+        <string name="_123_456_7890">(123) 456-7890</string>
+        <string name="settings_icon">Settings Icon</string>
+        <string name="settings">Settings</string>
+        <string name="logout_icon">Logout Icon</string>
+        <string name="logout">Logout</string>
+        <string name="mood_tracker_ntrack_your_daily_mood">Mood Tracker\nTrack your daily mood</string>
+        <string name="journal_nwrite_down_your_thoughts">Journal\nWrite down your thoughts</string>
+        <string name="daily_goals_nset_and_achieve_your_goals">Daily Goals\nSet and achieve your goals</string>
+        <string name="meditation_tracker_nmonitor_your_meditation_time">Meditation Tracker\nMonitor your meditation time</string>
+        <string name="mindfull_me">Mindfull Me</string>
+    </resources>
+

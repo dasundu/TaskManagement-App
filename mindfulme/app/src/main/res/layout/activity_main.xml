@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Logo and App Name at the Top Left -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="4dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon"
+         />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="-2dp"
+            android:text="@string/mindfull_me"
+            android:textAlignment="center"
+            android:textColor="#3700B3"
+            android:textSize="13sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <!-- User Profile ImageView -->
+    <ImageView
+        android:id="@+id/userProfileLogo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13dp"
+        android:contentDescription="@string/user_profile"
+        android:src="@drawable/usericon" />
+
+    <!-- LinearLayout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <!-- Mood Tracker Button -->
+        <Button
+            android:id="@+id/moodTrackerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mood_tracker_ntrack_your_daily_mood"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center" />
+
+        <!-- Journal Button -->
+        <Button
+            android:id="@+id/journalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/journal_nwrite_down_your_thoughts"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center" />
+
+        <!-- Daily Goals Button -->
+        <Button
+            android:id="@+id/dailyGoalsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/daily_goals_nset_and_achieve_your_goals"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center" />
+
+        <!-- Meditation Tracker Button -->
+        <Button
+            android:id="@+id/meditationTrackerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meditation_tracker_nmonitor_your_meditation_time"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>

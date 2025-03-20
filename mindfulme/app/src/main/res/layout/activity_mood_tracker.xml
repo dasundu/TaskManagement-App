@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Top Left Home Icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/home"
+            android:contentDescription="Home Icon"
+            android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood Tracker"
+        android:textSize="24sp"
+        android:textColor="@color/primaryColor"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <!-- Mood Selection -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/happyMood"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/smile"
+            android:contentDescription="Happy"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:id="@+id/neutralMood"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/confused"
+            android:contentDescription="Neutral"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:id="@+id/sadMood"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/sad"
+            android:contentDescription="Sad"/>
+    </LinearLayout>
+
+    <!-- Mood Log Button -->
+    <Button
+        android:id="@+id/logMoodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Mood"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColor"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <!-- Mood Summary Title -->
+    <TextView
+        android:id="@+id/moodSummaryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Mood Summary"
+        android:textSize="18sp"
+        android:textColor="@color/primaryColor"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <!-- Mood Summary Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/happyMoodCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/happy_5_days"
+                android:textSize="16sp"
+                android:textColor="@color/primaryColor"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/neutralMoodCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neutral: 2 days"
+                android:textSize="16sp"
+                android:textColor="@color/primaryColor"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/sadMoodCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sad: 3 days"
+                android:textSize="16sp"
+                android:textColor="@color/primaryColor"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
